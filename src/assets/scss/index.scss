@@ -1,0 +1,43 @@
+.header {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 5px 6px rgba(231, 231, 231, 0.25);
+  backdrop-filter: blur(3.5px);
+}
+
+.header-logo {
+  width: 139px;
+  height: 28px;
+}
+
+main {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+.block-1-title {
+  padding: 0 228px 0 232px;
+}
+
+.block-2 {
+  padding: 56px 0 100px 0;
+}
+
+.question-card-list {
+  padding: 0 110px;
+}
+
+.block-3 {
+  padding: 52px 0 170px 0;
+}
+
+.block-3-title {
+  margin-bottom: 170px;
+}
+
+.block-3-content {
+  padding: 0 230px;
+}
+
+.block-4-title {
+  margin-bottom: 151px;
+}

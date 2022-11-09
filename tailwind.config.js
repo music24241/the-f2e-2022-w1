@@ -31,11 +31,27 @@ module.exports = {
         },
       },
       backgroundImage: {
-        logo: "url('/assets/images/Logo/logo.svg')",
-        "m-logo": "url('/assets/images/m-logo.svg')",
+        logo: "url('/public/images/logo/logo.svg')",
+        "m-logo": "url('/public/images/logo/m-logo.svg')",
       },
       spacing: {
         12.5: "52px",
+        17: "72px",
+        18: "74px",
+        25: "98px",
+        27: "100px",
+      },
+      fontSize: {
+        "3.5xl": ["32px", "48px"],
+      },
+      borderRadius: {
+        20: "20px",
+        "4xl": "30px",
+        "5xl": "32px",
+        40: "40px",
+      },
+      letterSpacing: {
+        king: ".15em",
       },
     },
   },

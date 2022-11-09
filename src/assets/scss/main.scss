@@ -1,6 +1,56 @@
 @import 'base';
+@import "helpers";
 @import "index";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Noto Sans TC', system-ui, sans-serif;
+  }
+}
+
+@layer components{
+  .text-point {
+    @apply relative tracking-widest;
+
+    &:before {
+      @apply absolute bottom-0 content-[''] block h-4 left-1/2;
+      width: 118%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .question-card {
+    @apply relative border-2 border-secondary-200 py-6 px-7 rounded-20 bg-white bg-opacity-90 mb-14;
+    width: 416px;
+    height: 415px;
+
+    &:after {
+      z-index: -1;
+      @apply absolute content-[''] block h-full w-full left-3.5 top-3.5 rounded-20
+    }
+
+    &.primary {
+      @apply after:bg-primary-100;
+    }
+    &.warning {
+      @apply after:bg-warning-100;
+    }
+    &.danger {
+      @apply after:bg-danger-100;
+    }
+
+    .question-card-title {
+      @apply flex items-center justify-between border-2 border-secondary-200 py-4 px-5 rounded-20 text-xl text-secondary-200 tracking-king;
+    }
+  }
+
+  .level-card {
+    box-shadow: 4px 4px 5px #96F0FE, 4px 4px 5px #96F0FE;
+  }
+}
