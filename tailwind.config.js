@@ -15,12 +15,14 @@ module.exports = {
           200: "#FFE381",
           300: "#FFE791",
           400: "#FFEDB0",
+          500: "#FFCB66",
         },
         secondary: {
           100: "#252525",
           200: "#656565",
           300: "#C8C8C8",
           400: "#EEEBEB",
+          500: "#98B7C4",
         },
         info: {
           100: "#2D3F58",
@@ -28,6 +30,10 @@ module.exports = {
         },
         danger: {
           100: "#FEA996",
+          200: "#FD756F",
+        },
+        success: {
+          100: "#5FDD7A",
         },
       },
       backgroundImage: {

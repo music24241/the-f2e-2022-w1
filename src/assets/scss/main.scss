@@ -20,7 +20,6 @@
 
     &:before {
       @apply absolute bottom-0 content-[''] block h-4 left-1/2;
-      width: 118%;
       transform: translateX(-50%);
     }
   }
@@ -29,11 +28,6 @@
     @apply relative border-2 border-secondary-200 py-6 px-7 rounded-20 bg-white bg-opacity-90 mb-14;
     width: 416px;
     height: 415px;
-
-    &:after {
-      z-index: -1;
-      @apply absolute content-[''] block h-full w-full left-3.5 top-3.5 rounded-20
-    }
 
     &.primary {
       @apply after:bg-primary-100;
@@ -51,6 +45,41 @@
   }
 
   .level-card {
-    box-shadow: 4px 4px 5px #96F0FE, 4px 4px 5px #96F0FE;
+    &.level-card-primary {
+      box-shadow: 4px 4px 5px #96F0FE, 4px 4px 5px #96F0FE;
+      @apply after:bg-primary-100;
+
+      .level-card-decoration {
+        @apply after:bg-primary-100;
+      }
+
+      .text-point {
+        @apply before:text-primary-100;
+      }
+    }
+    &.level-card-warning {
+      box-shadow: 4px 4px 5px #FFDC62, 4px 4px 5px #FFDC62;
+      @apply after:bg-warning-100;
+
+      .level-card-decoration {
+        @apply after:bg-warning-100;
+      }
+
+      .text-point {
+        @apply before:text-warning-100;
+      }
+    }
+    &.level-card-danger {
+      box-shadow: 4px 4px 5px #FEA996, 4px 4px 5px #FEA996;
+      @apply after:bg-danger-100;
+
+      .level-card-decoration {
+        @apply after:bg-danger-100;
+      }
+
+      .text-point {
+        @apply before:text-danger-100;
+      }
+    }
   }
 }
